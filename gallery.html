@@ -103,7 +103,7 @@
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo">Marlon</a>
+          <a href="#" class="nav__logo">Mefraq</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -138,12 +138,12 @@
                <h2>PORTFOLIO</h2>
         
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('nature')"> Accessories</button>
-          <button class="btn" onclick="filterSelection('cars')"> Stone setting</button>
-          <button class="btn" onclick="filterSelection('people')"> Tecnique</button>
-          <button class="btn" onclick="filterSelection('vowen')"> Vowen Chain</button>
-          <button class="btn" onclick="filterSelection('moi')"> Moi</button>
+          <button class="btn topbtn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn topbtn" onclick="filterSelection('nature')"> Accessories</button>
+          <button class="btn topbtn" onclick="filterSelection('cars')"> Stone setting</button>
+          <button class="btn topbtn" onclick="filterSelection('people')"> Tecnique</button>
+          <button class="btn topbtn" onclick="filterSelection('vowen')"> Vowen Chain</button>
+          <button class="btn topbtn" onclick="filterSelection('moi')"> Moi</button>
         </div>
         
         <!-- Portfolio Gallery Grid -->
@@ -719,8 +719,13 @@
         var btns = btnContainer.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
           btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
+            var current = document.getElementsByClassName("topbtn");
+            for (i = 0; i < current.length; ++i) {
+              current[i].classList.remove("active");
+              console.log('hi')
+}
+            console.log(current);
+           
             this.className += " active";
           });
         }
