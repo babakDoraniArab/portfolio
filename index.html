@@ -57,21 +57,65 @@
           Designer - Jeweller
           </h1>
 
-          <a href="assets/files/Afsaneh Mahdavi CV.pdf" class="button">CV</a>
+          <a href="assets/files/Afsaneh Mahdavi CV.pdf" download  class="button">CV</a>
         </div>
 
         <div class="home__social">
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="" class="home__social-icon"
-            ><i class="bx bxl-behance"></i
-          ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+         
         </div>
 
         <div class="home__img">
-          <svg
+          <style>
+            .home__content__img {
+    overflow: hidden;
+    margin-right: 30px;
+    margin-left: 33px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    box-shadow: inset 0px 0px 0px 9px #b7532da6;
+    background-image: url(assets/img/profile/portfolio2.jpg);
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+}
+@media screen and (max-width:500px){
+  .home__content__img {
+    overflow: hidden;
+    margin-right: 30px;
+    margin-left: 33px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    animation: morph 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    box-shadow: inset 0px 0px 0px 9px #b7532da6;
+    background-image: url(assets/img/profile/portfolio2.jpg);
+}
+}
+          </style>
+          <div class="home__content__img"></div>
+          <!-- <svg
             class="home__blob"
             viewBox="0 0 479 467"
             xmlns="http://www.w3.org/2000/svg"
@@ -89,11 +133,11 @@
               <image
                 class="home__blob-img"
                 x="50"
-                y="60"
-                href="assets/img/perfil.png"
+                y="0"
+                href="assets/img/profile/portfolio4.jpg"
               />
             </g>
-          </svg>
+          </svg> -->
         </div>
       </section>
 
@@ -103,7 +147,7 @@
 
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="assets/img/about.jpg" alt="" />
+            <img src="assets/img/profile/ftu.jpg">
           </div>
 
           <div>
@@ -170,7 +214,7 @@
           </div>
 
           <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+            <img src="assets/img/accessories/d7.jpg" alt="" class="skills__img" />
           </div>
         </div>
       </section>
